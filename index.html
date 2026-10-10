@@ -4,54 +4,127 @@
   <meta charset="utf-8">
   <title>DOOM: The Dark Ages trainer +22 v2.0.0 — MoggyDay</title>
   <meta name="description" content="Free DOOM: The Dark Ages trainer MoggyDay +22 (v2.0.0): God Mode/Ignore Hits, Infinite Health, Infinite Shield Energy, Infinite Melee Weapon Charges, Infinite Ammo, N.…">
-  <meta name="keywords" content="doom the dark ages трейнер, doom dark ages, doom dark ages chain spear, doom dark ages cheats, doom dark ages download, doom dark ages dragon, doom dark ages god mode, doom dark ages gold, doom dark ages hack, doom dark ages infinite ammo, doom dark ages mech, doom dark ages one hit, doom dark ages platinum, doom dark ages rubies, doom dark ages shield, doom dark ages trainer, doom dark ages trainer download, doom dark ages wraithstones, doom the dark ages, doom the dark ages trainer">
+  <meta name="keywords" content="doom the dark ages трейнер, doom dark ages, doom dark ages chain spear, doom dark ages cheats, doom dark ages download, doom dark ages dragon, doom dark ages god mode, doom dark ages gold, doom dark ages hack, doom dark ages infinite ammo, doom dark ages mech, doom dark ages one hit, doom dark ages platinum, doom dark ages rubies, doom dark ages shield, doom dark ages trainer">
   <link rel="canonical" href="https://moggydaytrainer.com/en/f/doom-dark-ages-trainer">
-  <meta property="og:title" content="DOOM: The Dark Ages "Trainer +22: God Mode, Ammo, One Hit, Shield" [v2.1.0]">
+  <meta property="og:title" content="DOOM: The Dark Ages &quot;Trainer +22: God Mode, Ammo, One Hit, Shield&quot; [v2.1.0]">
   <meta property="og:description" content="Free DOOM: The Dark Ages trainer MoggyDay +22 (v2.0.0): God Mode/Ignore Hits, Infinite Health, Infinite Shield Energy, Infinite Melee Weapon Charges, Infinite Ammo, N.…">
   <meta property="og:url" content="https://moggydaytrainer.com/en/f/doom-dark-ages-trainer">
+  <meta property='og:image' content='https://moggydaytrainer.com/media/shots/hub-doomda/page.png'>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600;700&family=IBM+Plex+Serif:wght@500;700&display=swap" rel="stylesheet">
   <style>
-    :root { color-scheme: dark; }
-    body { font: 17px/1.55 "Segoe UI", system-ui, sans-serif; max-width: 860px; margin: 40px auto;
-      padding: 0 20px 64px; background: #0b1220; color: #d7e3f0; }
-    a { color: #7fdcf4; }
-    h1 { font-size: 28px; line-height: 1.25; color: #fff; }
-    .btn { display: inline-block; margin: 6px 8px 6px 0; padding: 12px 16px; border-radius: 10px;
-      background: #15ccf1; color: #041018; font-weight: 700; text-decoration: none; }
-    .btn.alt { background: transparent; color: #7fdcf4; border: 1px solid #2a4a5c; }
-    .muted { color: #8aa0b5; font-size: 14px; }
-    table { border-collapse: collapse; width: 100%; }
-    td, th { border-bottom: 1px solid #1c2c3c; padding: 8px 6px; text-align: left; }
+    :root {
+      --ink: #10160f;
+      --panel: #172016;
+      --paper: #d7e2cf;
+      --lime: #c6e15a;
+      --mute: #8aa08a;
+      --line: #2a3828;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; background: var(--ink); color: var(--paper);
+      font: 17px/1.55 "IBM Plex Sans", system-ui, sans-serif;
+    }
+    main { max-width: 980px; margin: 0 auto; padding: 28px 22px 72px; }
+    header.hero {
+      display: grid; grid-template-columns: 168px 1fr; gap: 22px;
+      align-items: start; margin-bottom: 22px;
+    }
+    .poster img {
+      width: 168px; height: auto; display: block;
+      border: 1px solid var(--line); background: #0a0e09;
+    }
+    h1 {
+      font-family: "IBM Plex Serif", Georgia, serif;
+      font-size: clamp(26px, 4vw, 36px); line-height: 1.15;
+      margin: 0 0 10px; font-weight: 700;
+    }
+    .meta { color: var(--mute); font-size: 14px; margin: 0 0 14px; }
+    .cta { display: flex; flex-wrap: wrap; gap: 8px; }
+    .cta a {
+      display: inline-block; padding: 10px 14px; text-decoration: none;
+      font-weight: 700; color: var(--ink); background: var(--lime);
+    }
+    .cta a.ghost { background: transparent; color: var(--paper); border: 1px solid var(--line); }
+    .strip {
+      display: grid; grid-template-columns: repeat(4, 1fr); gap: 6px;
+      margin: 8px 0 28px;
+    }
+    .strip a { color: var(--mute); font-size: 12px; text-decoration: none; }
+    .strip img { width: 100%; height: 110px; object-fit: cover; display: block; border: 1px solid var(--line); }
+    .strip span { display: block; margin-top: 4px; }
+    h2 {
+      font-family: "IBM Plex Serif", Georgia, serif;
+      font-size: 22px; margin: 32px 0 10px; font-weight: 700;
+    }
+    p, li { max-width: 68ch; }
+    a { color: var(--lime); }
+    table { width: 100%; border-collapse: collapse; margin: 8px 0 16px; }
+    th, td { text-align: left; padding: 7px 6px; border-bottom: 1px solid var(--line); }
+    .note { border-left: 3px solid var(--lime); padding-left: 12px; color: var(--mute); }
+    .rels { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; }
+    .rel { text-decoration: none; color: var(--paper); }
+    .rel img { width: 100%; aspect-ratio: 2/3; object-fit: cover; border: 1px solid var(--line); }
+    .rel b { display: block; margin-top: 6px; font-size: 13px; font-weight: 600; }
+    footer { margin-top: 40px; color: var(--mute); font-size: 13px; }
+    @media (max-width: 720px) {
+      header.hero, .strip, .rels { grid-template-columns: 1fr 1fr; }
+      .poster img { width: 100%; }
+    }
   </style>
 </head>
 <body>
-  <p class="muted">DOOM: The Dark Ages · MoggyDay TrainerHub · 2026 · +22 options</p>
-  <h1>DOOM: The Dark Ages "Trainer +22: God Mode, Ammo, One Hit, Shield" [v2.1.0]</h1>
-  <p>
-    <a class="btn" href="https://moggydaytrainer.com/en/f/doom-dark-ages-trainer">Free download (EN)</a>
-    <a class="btn alt" href="https://moggydaytrainer.com/f/doom-dark-ages-trainer">Скачать трейнер (RU)</a>
-    <a class="btn alt" href="https://moggydaytrainer.com/g/doom-the-dark-ages">DOOM: The Dark Ages hub</a>
-  </p>
-  <p>Free DOOM: The Dark Ages trainer MoggyDay +22 (v2.0.0): God Mode/Ignore Hits, Infinite Health, Infinite Shield Energy, Infinite Melee Weapon Charges, Infinite Ammo, N.…</p>
+<main>
+  <header class="hero">
+    <a class="poster" href="https://moggydaytrainer.com/en/f/doom-dark-ages-trainer"><img src="https://moggydaytrainer.com/media/covers/doom-the-dark-ages-1bbcc6ff7b.jpg" alt="DOOM: The Dark Ages cover"></a>
+    <div>
+      <p class="meta">DOOM: The Dark Ages · MoggyDay · v2.1.0 · +22</p>
+      <h1>DOOM: The Dark Ages &quot;Trainer +22: God Mode, Ammo, One Hit, Shield&quot; [v2.1.0]</h1>
+      <div class="cta">
+        <a href="https://moggydaytrainer.com/en/f/doom-dark-ages-trainer">Free download</a>
+        <a class="ghost" href="https://moggydaytrainer.com/f/doom-dark-ages-trainer">Скачать</a>
+        <a class="ghost" href="https://moggydaytrainer.com/g/doom-the-dark-ages">DOOM: The Dark Ages hub</a>
+      </div>
+    </div>
+  </header>
+  <div class="strip"><a href="https://moggydaytrainer.com/en/f/doom-dark-ages-trainer"><img src="https://moggydaytrainer.com/media/shots/hub-doomda/page.png" alt="DOOM: The Dark Ages page"><span>page</span></a><a href="https://moggydaytrainer.com/en/f/doom-dark-ages-trainer"><img src="https://moggydaytrainer.com/media/shots/hub-doomda/fn-1.png" alt="DOOM: The Dark Ages options"><span>options</span></a><a href="https://moggydaytrainer.com/en/f/doom-dark-ages-trainer"><img src="https://moggydaytrainer.com/media/shots/hub-doomda/fn-2.png" alt="DOOM: The Dark Ages functions"><span>functions</span></a><a href="https://moggydaytrainer.com/en/f/doom-dark-ages-trainer"><img src="https://moggydaytrainer.com/media/shots/hub-doomda/fn-3.png" alt="DOOM: The Dark Ages more"><span>more</span></a></div>
+  <p>Skip random mirrors. The DOOM: The Dark Ages trainer file is the primary button on https://moggydaytrainer.com/en/f/doom-dark-ages-trainer. Options include Infinite Health, Infinite Shield Energy, Infinite Melee Weapon Charges, Infinite Ammo. After a game patch, refresh that same URL — do not hunt a new GitHub repo. DOOM: The Dark Ages trainers tab lists every pack for the game.</p>
   
-  <h2>Why this page exists</h2>
-  <p>
-    GitHub indexes READMEs and Pages. This landing is a <strong>documentation mirror</strong> of the
-    live DOOM: The Dark Ages trainer so queries such as <em>DOOM: The Dark Ages trainer</em>, <em>DOOM: The Dark Ages trainer download</em> and
-    <em>free DOOM: The Dark Ages trainer</em> can attach to a real URL. The canonical page — the one with the file,
-    version and comments — is
-    <a href="https://moggydaytrainer.com/en/f/doom-dark-ages-trainer">https://moggydaytrainer.com/en/f/doom-dark-ages-trainer</a>.
-  </p>
-  <h2>Options listed on MoggyDay</h2>
-  <ul>
-      <li>Infinite Health</li>
-      <li>Infinite Shield Energy</li>
-      <li>Infinite Melee Weapon Charges</li>
-      <li>Infinite Ammo</li>
-  </ul>
-  <h2>Official MoggyDay links</h2>
+  <p>Free DOOM: The Dark Ages trainer MoggyDay +22 (v2.0.0): God Mode/Ignore Hits, Infinite Health, Infinite Shield Energy, Infinite Melee Weapon Charges, Infinite Ammo, N.…</p>
+  <h2>Who this is for</h2>
+  <p>If you already used older MoggyDay builds for DOOM: The Dark Ages, keep the same bookmark. The slug never changes; only the file and the +N heading get bumped.</p>
+  <h2>Options on the live page</h2>
   <table>
-    <tr><th>EN trainer</th><td><a href="https://moggydaytrainer.com/en/f/doom-dark-ages-trainer">https://moggydaytrainer.com/en/f/doom-dark-ages-trainer</a></td></tr>
-    <tr><th>RU trainer</th><td><a href="https://moggydaytrainer.com/f/doom-dark-ages-trainer">https://moggydaytrainer.com/f/doom-dark-ages-trainer</a></td></tr>
+    <thead><tr><th>#</th><th>Toggle</th></tr></thead>
+    <tbody>
+        <tr><td>1</td><td>Infinite Health</td></tr>
+        <tr><td>2</td><td>Infinite Shield Energy</td></tr>
+        <tr><td>3</td><td>Infinite Melee Weapon Charges</td></tr>
+        <tr><td>4</td><td>Infinite Ammo</td></tr>
+    </tbody>
+  </table>
+  <ul>
+      <li>Infinite Health — Usually the first toggle people enable on a DOOM: The Dark Ages trainer.</li>
+      <li>Infinite Shield Energy — Check this after every DOOM: The Dark Ages patch — values often shift.</li>
+      <li>Infinite Melee Weapon Charges — Leave it off if you only want a mild resource boost.</li>
+      <li>Infinite Ammo — Pairs with the other combat toggles on the DOOM: The Dark Ages page.</li>
+  </ul>
+  <h2>Download</h2>
+  <ol>
+    <li>Open <a href="https://moggydaytrainer.com/en/f/doom-dark-ages-trainer">DOOM: The Dark Ages &quot;Trainer +22: God Mode, Ammo, One Hit, Shield&quot; [v2.1.0]</a> or <a href="https://moggydaytrainer.com/f/doom-dark-ages-trainer">DOOM: The Dark Ages «Трейнер +22: God Mode, патроны, ваншот, щит» [v2.1.0]</a>.</li>
+    <li>Stay on moggydaytrainer.com.</li>
+    <li>Use the primary button. Do not install a zip that only copied this page.</li>
+    <li>After a DOOM: The Dark Ages patch, reload the same URL.</li>
+  </ol>
+  <h2>RU</h2>
+  <p>Бесплатный трейнер DOOM: The Dark Ages MoggyDay +22 (v2.0.0): Режим бога, Бесконечное здоровье, Энергия щита, Заряд ближнего боя, Бесконечные патроны, Без отдачи, Скор…</p>
+  <p><a href="https://moggydaytrainer.com/f/doom-dark-ages-trainer">DOOM: The Dark Ages «Трейнер +22: God Mode, патроны, ваншот, щит» [v2.1.0]</a> · <a href="https://moggydaytrainer.com/g/doom-the-dark-ages">хаб</a> · <a href="https://moggydaytrainer.com/g/doom-the-dark-ages/news">новости</a></p>
+  <h2>Official links</h2>
+  <table>
+    <tr><th>EN</th><td><a href="https://moggydaytrainer.com/en/f/doom-dark-ages-trainer">https://moggydaytrainer.com/en/f/doom-dark-ages-trainer</a></td></tr>
+    <tr><th>RU</th><td><a href="https://moggydaytrainer.com/f/doom-dark-ages-trainer">https://moggydaytrainer.com/f/doom-dark-ages-trainer</a></td></tr>
     <tr><th>Hub</th><td><a href="https://moggydaytrainer.com/g/doom-the-dark-ages">https://moggydaytrainer.com/g/doom-the-dark-ages</a></td></tr>
     <tr><th>News</th><td><a href="https://moggydaytrainer.com/g/doom-the-dark-ages/news">https://moggydaytrainer.com/g/doom-the-dark-ages/news</a></td></tr>
     <tr><th>Catalog</th><td><a href="https://moggydaytrainer.com/games">https://moggydaytrainer.com/games</a></td></tr>
@@ -70,16 +143,10 @@
       <li><a href="https://moggydaytrainer.com/en/f/doom-dark-ages-trainer">doom dark ages infinite ammo</a></li>
       <li><a href="https://moggydaytrainer.com/en/f/doom-dark-ages-trainer">doom dark ages mech</a></li>
       <li><a href="https://moggydaytrainer.com/en/f/doom-dark-ages-trainer">doom dark ages one hit</a></li>
-      <li><a href="https://moggydaytrainer.com/en/f/doom-dark-ages-trainer">doom dark ages platinum</a></li>
-      <li><a href="https://moggydaytrainer.com/en/f/doom-dark-ages-trainer">doom dark ages rubies</a></li>
   </ul>
-  <h2>More MoggyDay trainers</h2>
-  <ul>
-      <li><a href="https://moggydaytrainer.com/en/f/concubine-trainer">Concubine trainer +37: drop chance, shop refresh [v1.0.0]</a></li>
-      <li><a href="https://moggydaytrainer.com/en/f/pass-the-fear-trainer">Pass the Fear trainer +46: sanity, flashlight, stealth and items [v1.0.0]</a></li>
-      <li><a href="https://moggydaytrainer.com/en/f/inazuma-eleven-victory-road-trainer">INAZUMA ELEVEN: Victory Road trainer +40: TP, hissatsu, players and friendship [v1.0.0]</a></li>
-      <li><a href="https://moggydaytrainer.com/en/f/bongo-cat-trainer">Bongo Cat trainer +52: points, hats, chests, auto bongo [v1.0.0]</a></li>
-  </ul>
-  <p class="muted">Canonical: <a href="https://moggydaytrainer.com/en/f/doom-dark-ages-trainer">https://moggydaytrainer.com/en/f/doom-dark-ages-trainer</a>. No executable is hosted on GitHub Pages.</p>
+  <h2>More trainers on MoggyDay</h2>
+  <div class="rels"><a class="rel" href="https://moggydaytrainer.com/en/f/concubine-trainer"><img src="https://cdn.akamai.steamstatic.com/steam/apps/2426120/library_600x900_2x.jpg" alt=""><b>Concubine</b></a><a class="rel" href="https://moggydaytrainer.com/en/f/pass-the-fear-trainer"><img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3561220/deccb50f846ef36f591af447c6dc61fb861871ff/library_capsule_2x.jpg" alt=""><b>Pass the Fear</b></a><a class="rel" href="https://moggydaytrainer.com/en/f/inazuma-eleven-victory-road-trainer"><img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2799860/ef497bcbe65a4bea04ea6bdb9775edf767bdc3a0/library_600x900_2x.jpg" alt=""><b>INAZUMA ELEVEN: Victory Road</b></a><a class="rel" href="https://moggydaytrainer.com/en/f/bongo-cat-trainer"><img src="https://cdn.akamai.steamstatic.com/steam/apps/3419430/library_600x900_2x.jpg" alt=""><b>Bongo Cat</b></a></div>
+  <footer>Canonical: <a href="https://moggydaytrainer.com/en/f/doom-dark-ages-trainer">https://moggydaytrainer.com/en/f/doom-dark-ages-trainer</a>. Screenshots hosted on MoggyDay. No trainer exe on GitHub Pages.</footer>
+</main>
 </body>
 </html>
